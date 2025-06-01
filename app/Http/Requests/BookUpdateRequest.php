@@ -24,7 +24,7 @@ class BookUpdateRequest extends FormRequest
         return [
             'title' => 'sometimes|required|string|max:255',
             'synopsis' => 'sometimes|required|string|max:255',
-            'gender_id' => 'sometimes|required|exists:users,id',
+            'gender_id' => 'sometimes|required|exists:genders,id',
             'author_id' => 'sometimes|required|exists:authors,id',
         ];
     }
